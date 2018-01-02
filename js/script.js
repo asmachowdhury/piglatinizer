@@ -6,8 +6,15 @@
 
 // Document Ready Function. All of your jQuery should go in here. 
 $( document ).ready(function() {
-  
+  $("button").click(function(){
+    var message=$("input").val();
+    var pigText = oink(message);
+    $("#message").text(pigText);
+});
 
+function oink(word){
+ return word + "ay";    
+}
 
 
 });
